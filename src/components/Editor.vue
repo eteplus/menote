@@ -17,6 +17,7 @@
     </div>
     <div class="editor-bottombar">
       <div class="status-bar">
+        <img class="logo" src="../assets/img/logo.jpeg" alt="" />
         <span class="lines">lines: {{lines}}</span>
         <span class="words">words: {{words}}</span>
       </div>
@@ -105,6 +106,7 @@ export default {
       this.editor.$blockScrolling = Infinity
       this.editor.setShowPrintMargin(false)
       this.editor.setShowFoldWidgets(false)
+      console.log(this.editor)
 
       // editor session options
       this.editSession.setMode('ace/mode/markdown')
@@ -158,7 +160,7 @@ export default {
         const height = this.editSession.getScreenLength() * lineHeight - clientHeight
         const ratio = parseFloat(scrollTop) / height
         const calScrollTop = (this.$refs.preview.scrollHeight - this.$refs.preview.clientHeight) * ratio
-        if (calScrollTop > 0) this.$refs.preview.scrollTop = calScrollTop
+        this.$refs.preview.scrollTop = calScrollTop
       })
 
       // editor preview sync scroll
@@ -736,11 +738,11 @@ body {
 }
 
 .editor {
-  position: fixed;
+  position: fixed !important;
   left: 0;
   right: 0;
   top: 50px;
-  font-size: 14px;
+  font-size: 14px !important;
   opacity: 1;
 }
 
@@ -854,10 +856,17 @@ body {
   right: 30px;
   top: 15px;
   margin: auto;*/
+  height: 100%;
   margin-right: 20px;
   font-size: 12px;
   color: #959694;
   text-align: right;
+}
+
+.logo {
+  width: auto;
+  float: left;
+  height: 100%;
 }
 
 .status-bar span {

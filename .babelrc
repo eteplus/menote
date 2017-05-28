@@ -1,14 +1,10 @@
 {
   "presets": [
-    ["env", { "modules": false }],
-    "stage-2"
+    ["stage-2"],
+    ["es2015"],
+    ["env", { "modules": false }]
   ],
-  "plugins": ["transform-runtime", ["component", [
-    {
-      "libraryName": "element-ui",
-      "styleLibraryName": "theme-default"
-    }
-  ]]],
+  "plugins": ["transform-runtime"],
   "comments": false,
   "env": {
     "test": {
