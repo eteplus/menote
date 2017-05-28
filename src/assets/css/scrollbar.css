@@ -1,0 +1,35 @@
+.ace_editor .ace_scrollbar {
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  opacity: 0;
+}
+.ace_editor:hover .ace_scrollbar {
+  opacity: 1;
+}
+
+.ace_editor:scroll .ace_scrollbar {
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  /*width: 0.45em;*/
+  /*height: 0.45em;*/
+  width: 6px;
+  height: 6px;
+}
+
+/*::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}*/
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.4);
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(100, 100, 100, 0.4);
+}
