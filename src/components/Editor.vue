@@ -17,7 +17,7 @@
     </div>
     <div class="editor-bottombar">
       <div class="status-bar">
-        <img class="logo" src="../assets/img/logo.jpeg" alt="" />
+        <img class="logo" src="static/img/logo.jpeg" alt="" />
         <span class="lines">lines: {{lines}}</span>
         <span class="words">words: {{words}}</span>
       </div>
