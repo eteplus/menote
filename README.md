@@ -1,5 +1,5 @@
 # Menote
-> A simple, beautiful Markdown editor powered by **[vue.js](https://https://github.com/vuejs/vue), [ace](https://github.com/ajaxorg/ace/),
+> A simple, beautiful Markdown editor powered by **[vue.js](https://github.com/vuejs/vue), [ace](https://github.com/ajaxorg/ace/),
 [markdown-it](https://github.com/markdown-it/markdown-it).**  ✨
 
 **Live Demo:**  https://eteplus.github.io/menote
